@@ -10,7 +10,7 @@ class Home extends React.Component {
 
   fetchCharacters = () => {
     MarvelService.listCharacters()
-    .then(res => console.log(`the response is ${res}`))
+    .then(res => res.data.data.results.map(el => this.setState({ characters: el })))
     .catch(err => console.log(`the error is ${err}`))
   }
 
@@ -19,6 +19,7 @@ class Home extends React.Component {
   }
 
   render() {
+    console.log(this.state.characters)
     return(
       <div className='Home'>
         <h1>Home Again</h1>
