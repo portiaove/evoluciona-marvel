@@ -2,7 +2,9 @@ import React from 'react'
 
 const Characters = (props) => {
 
-  const { name, description, thumbnail } = props.character
+  const { name, thumbnail } = props.character
+
+  const description = props.character.description.replace(/<p class="Body">/g, '').replace(/<\/p>/g, '')
 
   const image = `${thumbnail.path}.${thumbnail.extension}`
 
