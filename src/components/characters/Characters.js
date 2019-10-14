@@ -31,7 +31,10 @@ class Characters extends React.Component {
       <div className ='Characters-Info'>
         <h2>{name}</h2>
         <p>{text}</p>
-        {text !== 'No description available at the moment :(' && <button className='Btn-ReadMore' onClick={this.handleReadMore}>{readText}</button>}
+        {text !== 'No description available at the moment :(' &&
+        <div className='Btn-Container'>
+         <button className='Btn-ReadMore' onClick={this.handleReadMore}>{readText}</button>
+        </div>}
       </div>
     </div>
   )
