@@ -1,3 +1,60 @@
 .App {
   text-align: center;
 }
+
+.Search-Bar{
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  height: 5vh;
+  margin-bottom: 50px;
+}
+
+.Search-Input {
+  box-shadow: 0px 0px 2px 0px grey;
+  outline: none;
+  border-radius: 4px 0px 0px 4px;
+  height: 100%;
+  width: 20%;
+  font-size: 17px;
+  border: none;
+}
+
+.Search-Button {
+  width: 3%;
+  height: 100%;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #e3469e;
+}
+
+.Characters-List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; 
+  margin-top: 20px;
+    
+}
+
+.Characters {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-radius: 3px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.Characters img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+.Characters-Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

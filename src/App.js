@@ -7,7 +7,7 @@ import Home from './components/misc/Home'
 function App() {
   return (
     <div className="App">
-      <h1>Here comes the Challenge</h1>
+      <h1>Juan Portillo for Grupo Evoluciona</h1>
       <Switch>
         <Route exact path='/' component={Home} />
       </Switch>
