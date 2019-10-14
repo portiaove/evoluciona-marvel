@@ -58,3 +58,10 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.Btn-ReadMore {
+  background-color: #c7fffa;
+  border-radius: 3px;
+  outline: none;
+  width: 20%;
+}
